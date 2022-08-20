@@ -1,0 +1,11 @@
+-- CREATE TABLE IF NOT EXISTS books (title TEXT, author TEXT, publication_date TEXT)
+-- CREATE TABLE IF NOT EXISTS book_reviewers (name TEXT, location TEXT, number_reviews INT)
+-- CREATE TABLE IF NOT EXISTS temperature_readings (temperature REAL, date_time TEXT)
+-- INSERT INTO users (surname) VALUES ('Smith');
+-- CREATE TABLE users1 (id INTEGER, first_name TEXT, surname TEXT, salary INTEGER)
+-- INSERT INTO users1 VALUES (1, 'lukas', 'houpt', 0)
+-- INSERT INTO users1 VALUES (2, 'tessa', 'danehy', 0)
+-- INSERT INTO users1 VALUES (3, 'logan', 'houpt', 1)
+-- CREATE TABLE entries (content TEXT, publication_date TEXT)
+-- INSERT INTO entries (publication_date) VALUES ('aug 15')
+INSERT INTO entries VALUES ('harry potter', 'aug 15')
