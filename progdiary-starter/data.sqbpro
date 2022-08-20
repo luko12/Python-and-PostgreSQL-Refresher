@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="/Users/houptx/Documents/Dev/Peaze/Python-and-PostgreSQL-Refresher/progdiary-starter/data.db" readonly="0" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="890"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="4,5:mainusers"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="movies" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="18"/><column index="2" value="60"/><column index="3" value="107"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="users" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="59"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="watched" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="91"/><column index="2" value="55"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="samplesqlfile.sql">-- This is a comment
+-- The line below is not a comment
+CREATE TABLE IF NOT EXISTS users (first_name TEXT, surname TEXT)</sql><sql name="test1.sql">-- CREATE TABLE IF NOT EXISTS books (title TEXT, author TEXT, publication_date TEXT)
+-- CREATE TABLE IF NOT EXISTS book_reviewers (name TEXT, location TEXT, number_reviews INT)
+-- CREATE TABLE IF NOT EXISTS temperature_readings (temperature REAL, date_time TEXT)
+-- INSERT INTO users (surname) VALUES ('Smith');
+-- CREATE TABLE users1 (id INTEGER, first_name TEXT, surname TEXT, salary INTEGER)
+-- INSERT INTO users1 VALUES (1, 'lukas', 'houpt', 0)
+-- INSERT INTO users1 VALUES (2, 'tessa', 'danehy', 0)
+-- INSERT INTO users1 VALUES (3, 'logan', 'houpt', 1)
+-- CREATE TABLE entries (content TEXT, publication_date TEXT)
+-- INSERT INTO entries (publication_date) VALUES ('aug 15')
+INSERT INTO entries VALUES ('harry potter', 'aug 15')</sql><sql name="test2.sql">-- SELECT first_name, surname FROM users;
+SELECT * FROM users;</sql><sql name="SQL 4">-- SELECT * FROM users WHERE surname != &quot;Smith&quot;
+DROP TABLE IF EXISTS users;</sql><sql name="section3.sql">SELECT movies.* 
+FROM movies
+JOIN watched ON movies.id = watched.movie_id
+JOIN users ON users.username = watched.user_username
+WHERE users.username = 'lukas';</sql><sql name="SQL 6"></sql><current_tab id="5"/></tab_sql></sqlb_project>
